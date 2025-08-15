@@ -6,9 +6,9 @@ export const useCounterStore = defineStore('counter', () => {
     const router = useRouter();
 
     // const serverUrlDomainRequest = ref('http://syberia.gearsdpz.beget.tech')
-    const serverUrlDomainRequest = ref('http://cv-test.gearsdpz.beget.tech')
+    const serverUrlDomainRequest = ref('https://spacedev.space')
 
-    const domainUrlCurrent = ref('https://gift-siberia.com')
+    const domainUrlCurrent = ref('https://psih2131-cv-apartment-c030.twc1.net')
 
     const preloaderStatus = ref(true)
 
