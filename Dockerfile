@@ -1,5 +1,5 @@
-# Используем минималистичный образ с Node.js 20
-FROM node:20-alpine3.17 AS build
+# Используем минималистичный образ с Node.js 22
+FROM node:22-alpine3.17 AS build
 
 # Обновляем систему и устанавливаем необходимые зависимости
 RUN apk update && apk upgrade && apk add --no-cache bash
@@ -20,7 +20,7 @@ COPY . .
 RUN npm run build
 
 # Используем второй этап, чтобы уменьшить размер контейнера
-FROM node:20-alpine3.17
+FROM node:22-alpine3.17
 
 # Обновляем систему и устанавливаем необходимые зависимости, добавляем dumb-init для корректной работы процессов
 RUN apk update && apk upgrade && apk add --no-cache dumb-init && adduser -D nuxtuser

@@ -102,10 +102,12 @@
                             
 
                         </div>
-
-                        <div class="apartment-table__load-more-btn-wrapper" v-if="currentPage < totalPages">
-                            <button class="load-more-btn" @click="loadMore()">Загрузить еще</button>
-                        </div>
+                        <ClientOnly>
+                            <div class="apartment-table__load-more-btn-wrapper" v-if="currentPage < totalPages">
+                                <button class="load-more-btn" @click="loadMore()">Загрузить еще</button>
+                            </div>
+                        </ClientOnly>
+                        
 
                     </div>
                 </div>
