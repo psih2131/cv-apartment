@@ -1,0 +1,27 @@
+@mixin btnType1 {
+    padding: 8px 24px;
+    border: solid 1px #CED1D7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $darkBlue;
+    background: none;
+    border-radius: 100px;
+    display: inline-block;
+    transition: all ease 0.3s;
+
+    &:hover {
+        background: $greenV1;
+        border: solid 1px $greenV1;
+        transition: all ease 0.3s;
+        box-shadow: 0 6px 20px 0 #95D0A1;
+        color: #fff;
+    }
+
+    &:active {
+        background: $greenV2;
+        border: solid 1px $greenV2;
+        transition: all ease 0.3s;
+        color: #fff;
+    }
+}

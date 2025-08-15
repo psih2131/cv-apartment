@@ -1,0 +1,96 @@
+.apartments-filtr {
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(174, 228, 178, 0.30) 0%, rgba(149, 208, 161, 0.30) 100%);
+    padding: 40px;
+
+    .range-filtr {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.rooms {
+    display: flex;
+    align-items: center;
+}
+
+.rooms__element {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: $darkBlue;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: $white;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &:not(.rooms__element--activ, .rooms__element--hide) {
+        &:hover {
+            transform: scale(1.1);
+            transition: all ease 0.3s;
+        }
+
+        &:active {
+            color: rgba(11, 23, 57, 0.2);
+        }
+    }
+}
+
+.rooms__element--activ {
+    background: $greenV1;
+    color: $white;
+    box-shadow: 0 6px 20px 0 #95D0A1;
+    cursor: default;
+}
+
+.rooms__element--hide {
+    color: #CED1D7;
+    cursor: default;
+}
+
+.apartments-filtr__rooms-row {
+    margin-bottom: 24px;
+}
+
+.apartments-filtr__clear-btn {
+    display: flex;
+    margin-left: 16px;
+    margin-top: 34px;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    svg {
+        display: block;
+        margin-left: 8px;
+        transition: all ease 0.3s;
+    }
+
+    &:hover {
+        color: $greenV1;
+        transition: all ease 0.3s;
+
+        svg {
+            transform: rotate(180deg);
+            transition: all ease 0.3s;
+        }
+    }
+}

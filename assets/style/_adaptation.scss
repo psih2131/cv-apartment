@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 850px;
+    }
+
+    .apartment-sec {
+        padding: 48px 0;
+    }
+
+    .apartment-sec__aside {
+        width: 320px;
+    }
+
+    .apartment-sec__body {
+        width: 506px;
+    }
+
+    .apartment-sec__title {
+        margin-bottom: 24px;
+    }
+
+    .apartment-table__header-element--type-1 {
+        display: none;
+    }
+
+    .apartment-table__header-element--type-2 {
+        display: none;
+    }
+
+    .apartment-table__header {
+        display: flex;
+        justify-content: flex-start;
+        padding: 8px 0;
+        border: none;
+    }
+
+    .apartment-table__header-element {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .apartment {
+        padding: 16px 24px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        background: #FFF;
+        margin-top: 4px;
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+
+    .apartment__data-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        order: 0;
+        width: calc(100% - 20px - 80px);
+    }
+
+    .apartment__col--type-1 {
+        order: 1;
+    }
+
+    .apartment__col--type-2 {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .apartment__col--type-3,
+    .apartment__col--type-4,
+    .apartment__col--type-5 {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .apartment__text-value-pc-hiden {
+        display: inline-block;
+    }
+
+    .apartment__text-value {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .apartment-table__load-more-btn-wrapper {
+        margin-top: 24px;
+    }
+
+    .load-more-btn {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 8px 24px;
+    }
+
+    .apartments-filtr {
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    .range-filtr__title {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .range-filtr__value {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .apartments-filtr {
+        .range-filtr {
+            margin-bottom: 29px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .apartments-filtr__clear-btn {
+        margin-top: 34px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .apartment-sec__aside {
+        top: 48px;
+    }
+}

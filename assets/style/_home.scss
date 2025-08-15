@@ -1,0 +1,125 @@
+.apartment-sec {
+    padding: 96px 0;
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.apartment-sec__body {
+    width: 800px;
+}
+
+.apartment-sec__aside {
+    width: 400px;
+    position: sticky;
+    top: 40px;
+}
+
+.apartment-sec__title {
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    color: $darkBlue;
+    margin-bottom: 48px;
+}
+
+.apartment-table__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: solid 1px #E6E6E6;
+}
+
+.apartment-table__header-element {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: $darkBlue;
+}
+
+
+.apartment-table__header-element-direction-btn {
+    margin: 3px 0;
+
+    svg {
+        display: block;
+        cursor: pointer;
+        transition: all ease 0.2s;
+
+    }
+
+    &:hover {
+        svg {
+            path {
+                fill: $greenV1
+            }
+        }
+    }
+}
+
+.apartment-table__header-element-direction-btn.activ {
+    svg {
+        path {
+            fill: $greenV1
+        }
+    }
+}
+
+.apartment-table__header-element--hover {
+    transition: all ease 0.2s;
+
+    &:hover {
+        color: $greenV1;
+        transition: all ease 0.2s;
+    }
+}
+
+.apartment-table__header-element--type-1 {
+    width: 80px;
+}
+
+.apartment-table__header-element--type-2 {
+    width: 280px;
+}
+
+.apartment-table__header-element--type-3 {
+    width: 120px;
+}
+
+.apartment-table__header-element--type-4 {
+    width: 120px;
+}
+
+.apartment-table__header-element--type-5 {
+    width: 120px;
+}
+
+.apartment-table__header-element-direction-btn-container {
+    margin-left: 8px;
+}
+
+.apartment-table__load-more-btn-wrapper {
+    margin-top: 48px;
+}
+
+.load-more-btn {
+    @include btnType1;
+}
+
+.apartment-table__no-data-notification {
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    border: solid 1px #f0f0f0;
+    margin-top: 30px;
+
+}
